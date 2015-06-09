@@ -1,14 +1,14 @@
  @font-face{
-	font-family: Besom;
-	src: url('../fonts/Besom-font.ttf');
-	font-weight: 600;
+  font-family: Besom;
+  src: url('../fonts/Besom-font.ttf');
+  font-weight: 600;
  }
 
  @font-face{
- 	font-family: Bellaboo;
- 	src: url('../fonts/BELLABOO/BELLABOO-Regular.ttf');
- 	font-weight: 300;
- }	
+  font-family: Bellaboo;
+  src: url('../fonts/BELLABOO/BELLABOO-Regular.ttf');
+  font-weight: 300;
+ }  
  /* Move down content because we have a fixed navbar that is 50px tall */
  
 html, body, #map{
@@ -25,17 +25,17 @@ a:hover{
 } 
 
 body{
-	font-family: 'Open Sans', sans-serif;
-	color: #20262e;
-	font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  color: #20262e;
+  font-size: 22px;
 }
 
 img{
-	height: auto;
+  height: auto;
 }
 
 img, video, embed{
-	max-width: 100%;
+  max-width: 100%;
 }
 
 textarea{
@@ -43,15 +43,24 @@ textarea{
 }
 
 .navbar{
-	background-color: transparent;
-	border: none;
-	margin-bottom: 0px;
-	margin-top: 10px;
-	padding-top: 30px;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding-top: 30px;
+  position: absolute;
+  padding-left: 55px;
+  width: 100%;
+  z-index: 400;
+  border-radius: 0px;
+}
+
+.navbar.black{
+  position: relative;
 }
 
 .navbar-brand, footer .row:first-child{
-	font-family: 'Besom', sans-serif;
+  font-family: 'Besom', sans-serif;
   color: #fff;
   font-size: 40px;
 }
@@ -64,36 +73,103 @@ textarea{
   margin-right: 0px;
 }
 
+.navbar.black .navbar-right{
+  padding-top: 20px;
+}
+
 .navbar-default .navbar-brand {
   color: #fff;
 }
 
 .navbar-brand img{
-	height: 40px;
-	width: 40px;
-	position: relative;
-	margin-top: -10px;
+  height: 60px;
+  margin-top: -32px;
 }
 
+.navbar.black>.container{
+  padding-left: 0px;
+  padding-right: 34px;
+  margin-left: 18px;
+}
+
+.navbar.black .navbar-brand{
+  background: url(../images/Logo-Black.png) no-repeat;
+  height: 60px;
+  width: 126px;
+  background-size: 126px 60px;
+}
+
+footer .row:first-child div{
+  height: 91px;
+}
+
+footer a.footer-brand{
+  background: url(../images/Logo-White.png) no-repeat;
+  height: 76px;
+  width: 100%;
+  background-size: 160px 76px;
+  background-position-x: center;
+  display: inline-block;
+}
 
 .navbar-default .navbar-nav>li>a{
-	font-size: 15px;
-	/*font-family: 'Besom', 'Open Sans', sans-serif;*/
-	color: #fff;
-	font-weight: 500;
+  font-size: 17px;
+  font-family: 'Dosis', 'Open Sans', sans-serif;
+  color: rgba(240, 240, 240, 1);
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-top: 0px;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .black .navbar-nav>li>a.activated{
   border-bottom: 3px solid rgba(137, 246, 231,.3);
-  padding: 10px 0px 5px 0px;
+  padding: 0px 0px 5px 0px;
   border-radius: 1px;
   color: #fff;
 }
 
 .nav>li>a{
-	padding: 10px 0px;
-	margin: 0px 15px;
+  padding: 10px 0px;
+  margin: 0px 15px;
+}
+
+#nav.fixed-header{
+  background:#20262e;
+  position: fixed;
+  -webkit-transition: background .6s;
+  -moz-transition: background .6s;
+  -o-transition: background .6s;
+  transition: background .6s;
+  opacity: .9;
+  margin-top: 0px;
+  padding-top: 0px;
+  text-transform: uppercase;
+  font-family: 'Dosis', 'Open Sans',sans-serif;
+}
+
+#nav.fixed-header .navbar-brand img{
+  height: 45px;
+  margin-top: -6px;
+}
+
+.navbar-default.fixed-header .navbar-nav>li>a:hover{
+  border-bottom: 0px;
+  color: #fff;
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+.navbar-default.fixed-header .navbar-nav>li{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.navbar-default.fixed-header .navbar-nav>li:hover{
+  background-color: rgba(240, 240, 240, .1);
+  border-bottom: 4px solid rgba(137, 246, 231,.5);
+  padding-bottom: 6px;
+  border-radius: 1px;
 }
 
 .header{
@@ -106,33 +182,33 @@ textarea{
   background-size: cover;
   padding-top: 190px;
   padding-bottom: 160px;
-  margin-top: -90px;
+  /*margin-top: -90px;*/
 }
 
 .header h1{
-	font-family: 'Dosis', sans-serif;
-  	font-size: 105px;
-  	font-weight: 100;
-  	color: #fff;
-  	text-shadow: 0px 0px 10px rgba(0,0,0,.2);
-  	letter-spacing: -5px;
-  	margin-bottom: 60px;
-  	margin-top: 0px;
-  	line-height: 137px;
+  font-family: 'Dosis', sans-serif;
+    font-size: 105px;
+    font-weight: 100;
+    color: rgba(240, 240, 240, .94);
+    text-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    letter-spacing: -5px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    line-height: 137px;
 }
 
 .highlight{
-	background-color: rgba(77, 186, 171,.3);
-  	border-radius: 2px;
+  background-color: rgba(77, 186, 171,.3);
+    border-radius: 2px;
 }
 
 .header .row div{
-	clear: both;
-	margin: 0 auto;
+  clear: both;
+  margin: 0 auto;
 }
 
 .navbtn, .navbtn:focus{
-	background-color: transparent;
+  background-color: transparent;
   border: 1px solid;
   border-radius: 4px;
   color: #fff;
@@ -150,7 +226,7 @@ textarea{
 }
 
 .navbtn:last-child{
-	width: 247px;
+  width: 247px;
 }
 
 .navbtn:hover{
@@ -160,70 +236,73 @@ textarea{
 }
 
 .navbtn i{
-	position: absolute;
-	top: 21px;
+  position: absolute;
+  top: 21px;
   right: 26px;
 }
 
 .top h2{
-	line-height: 46px;
-  font-weight: 600;
+  line-height: 48px;
+  font-weight: 500;
   margin-top: 70px;
+  font-size: 35px;
+  font-family: 'Dosis', 
+  'Open Sans';
 }
 
 .top p{
-	font-weight: 400;
-	line-height: 37px;
-	padding-bottom: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  padding-bottom: 30px;
 }
 
 .testimony{
-	padding: 40px 5%;
-	border-top: 1.8px solid #d8d8d8;
-	margin-top: 26px;
+  padding: 40px 5%;
+  border-top: 1.8px solid #d8d8d8;
+  margin-top: 26px;
 }
 
 .testimony>figure{
-	text-align: center;
-  	vertical-align: middle;
-  	padding-right: 30px;
-  	padding-left: 30px;
+  text-align: center;
+    vertical-align: middle;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 figcaption{
-	font-size: 14px;
-	line-height: 24px;
-	padding: 0 10%;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 10%;
 }
 
 blockquote:before{
-	content: open-quote;
-  	position: absolute;
-  	top: -20px;
-  	left: -14px;
-  	color: #000;
-  	opacity: 0.2;
-  	font-size: 70px; 	
+  content: open-quote;
+    position: absolute;
+    top: -20px;
+    left: -14px;
+    color: #000;
+    opacity: 0.2;
+    font-size: 70px;  
 }
 
 blockquote{
-	border-left:none;
+  border-left:none;
   quotes: "“" "”";
 }
 
 blockquote p{
-	font-size: 22px;
-  	font-weight: 300;
-  	line-height: 35px;
+  font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
 }
 
 figure img{
-	width: 100px;
-  	margin-bottom: 20px;
+  width: 100px;
+    margin-bottom: 20px;
 }
 
 .middle>.row, .bottom, .content, div.map{
-	padding: 80px 6%;
+  padding: 80px 6%;
 }
 
 .middle>.contact{
@@ -235,31 +314,31 @@ div.map{
 }
 
 .orange{
-	background-color: #EE6B27;
-  	color: #fff;
+  background-color: #EE6B27;
+    color: #fff;
 }
 
 .orange h1, .blue h1{
-	font-family: 'Dosis', sans-serif;
-  	text-align: center;
-  	font-size: 52px;
-  	font-weight: 300;
-  	margin-bottom: 25px;
+  font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 300;
+    margin-bottom: 25px;
 }
 
 .orange .top-sect p{
-	padding: 0 18px;
-  	margin-bottom: 60px;
-  	line-height: 34px;
+  padding: 0 18px;
+    margin-bottom: 60px;
+    line-height: 34px;
 }
 
 .orange h4, .blue h4,
 .about h4{
-	font-family: 'Dosis', sans-serif;
-	font-size: 23px;
-	font-weight: 300;
-	line-height: 35px;
-	padding-bottom: 20px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 35px;
+  padding-bottom: 20px;
 }
 
 .about h4{
@@ -267,26 +346,26 @@ div.map{
 }
 
 .orange .bottom-sect p{
-	font-size: 17px;
-	line-height: 27px;
-	font-weight: 600;
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 600;
 }
 
 .top-2{
-	padding: 40px 0;
+  padding: 40px 0;
 }
 
 .top-2 h2, .content h1, .content p, .content h2,
 .content input, .content textarea{
-	margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .top-2 p:nth-child(3), p:last-child{
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 } 
 
 .top-2 .main a, .bottom a, .content .main a, .content .main button{
-	margin-top: 20px;
+  margin-top: 20px;
   max-width: 505px;
   font-size: 21px;
   border-color: rgba(77, 186, 171,1);
@@ -299,14 +378,14 @@ div.map{
 .bottom a:hover, .bottom a:active, .bottom a:focus,
 .content .main a:hover, .content .main a:active, .btn-success a:focus,
 .content .btn-default:hover, .content button:active, .content button:focus{
-	border-color: rgba(69, 166, 153,1);
+  border-color: rgba(69, 166, 153,1);
   border-radius: 3px;
   background-color: rgba(69, 166, 153, 1);
   color: #fff;
 }
 
 .bottom .row:first-child div{
-	background-color: #eee;
+  background-color: #eee;
   padding: 25px 40px;
   max-width: 330px;
   margin-right: 29px;
@@ -315,13 +394,13 @@ div.map{
 }
 
 .bottom h4{
-	font-size: 20px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 28px;
 }
 
 .bottom p{
-	font-size: 19px;
+  font-size: 19px;
   line-height: 32px;
   margin-bottom: 38px;
 }
@@ -395,9 +474,21 @@ footer{
   text-align: center;
 }
 
+footer img{
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
 footer li, fieldset li{
-  margin: 14px;
   font-size: 15px;
+}
+
+footer li{
+  margin: 12px;
+}
+
+fieldset  li{
+  margin: 14px;
 }
 
 footer li, fieldset li, .pagination li{
@@ -406,15 +497,19 @@ footer li, fieldset li, .pagination li{
 }
 
 footer li a{
-  color: #fff;
+  font-family: 'Dosis', 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: rgba(240, 240, 240, 0.89);
 }
 
 footer .row:nth-child(2){
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 footer .row:last-child{
-  font-size: 13px;
+  font-size: 12px;
   color: #97959e;
 }
 
