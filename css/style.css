@@ -889,6 +889,35 @@ article.trainers>div{
   margin-bottom: 40px;
 }
 
+.hr-fq{
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.box{
+  border: 1px solid #ddd; 
+  margin-bottom: 30px;
+}
+
+.box p, .box h2{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box p:last-child{
+  margin-bottom: 30px;
+}
+
+.box h2{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.more-qstion{
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
 div.trainers h3{
   font-weight: 600;
   margin-bottom: 20px;
@@ -925,4 +954,46 @@ div.trainers p{
   text-transform: uppercase;
   font-family: 'Dosis', sans-serif;
 }
+
+.price{
+  width: 32%;
+  background-color: #fff;
+  border: 2px solid #d8d8d8;
+  border-radius: 3px;
+  margin: 0px;
+}
+
+.price.popular::before{
+  content: 'Most Popular';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  margin: 0 10%;
+  padding: 12px;
+  background-color: #4dba97;
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  font-family:'Dosis', 'Open Sans', sans-serif;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.price.popular{
+  position: relative;
+  padding: 30px 0;
+  top: -30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition:    all 0.3s ease-in-out;
+  -ms-transition:     all 0.3s ease-in-out;
+  -o-transition:      all 0.3s ease-in-out;
+  transition:         all 0.3s ease-in-out;
+}
+
+.price.popular:hover{
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 
