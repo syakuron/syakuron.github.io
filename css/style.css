@@ -415,6 +415,7 @@ footer .row:nth-child(2){
 
 footer .row:last-child{
   font-size: 10px;
+  color: #97959e;
 }
 
 .black .navbar-brand, .black .navbar-nav>li>a, 
