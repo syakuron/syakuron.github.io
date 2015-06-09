@@ -371,7 +371,7 @@ div.map{
   margin-bottom: 30px;
 }
 
-.bottom-sect input, .bottom-sect button,
+.bottom-sect input,
 .content input, .content button{
   height: 55px;
   font-size: 20px;
@@ -379,15 +379,13 @@ div.map{
   width: 100%;
 }
 
-.first{
-  margin-bottom: 30px;
+.bottom-sect .email,
+.bottom-sect .btn:hover{
+  background: rgba(255,255,255,0.8);
 }
 
-.bottom-sect button:hover{
-  background-color: rgba(26, 188, 156,1.0);
-  color: #fff;
-  font-weight: 600;
-  border-color: rgba(149, 165, 166,.2);
+.first{
+  margin-bottom: 30px;
 }
 
 footer{
