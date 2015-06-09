@@ -379,8 +379,8 @@ div.map{
   width: 100%;
 }
 
-.bottom-sect .email,
-.bottom-sect .btn:hover{
+.bottom-sect input.email,
+.bottom-sect input.btn:hover{
   background: rgba(255,255,255,0.8);
 }
 
