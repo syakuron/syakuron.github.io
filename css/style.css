@@ -858,7 +858,7 @@ legend.tag-border {
   border: 0px;
 }
 
-.trainers h1, .programs h1{
+div.trainers h1, .programs h1{
   text-align: center;
   font-family: 'Dosis', sans-serif;
   font-weight: 100;
@@ -867,10 +867,14 @@ legend.tag-border {
   text-transform: uppercase;
 }
 
-.trainers h1{
+div.trainers h1{
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   font-size:60px;
+}
+
+article.trainers>div{
+  padding: 0px;
 }
 
 .programs h1{
@@ -885,14 +889,15 @@ legend.tag-border {
   margin-bottom: 40px;
 }
 
-.trainers h3{
+div.trainers h3{
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.trainers p{
+div.trainers p{
   font-size: 20px;
   line-height: 30px;
+  padding-right: 10px;
 }
 
 .trainers-detail p, .trainers-detail p a{
