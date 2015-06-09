@@ -11,11 +11,10 @@
  }	
  /* Move down content because we have a fixed navbar that is 50px tall */
  
-html, body, #maps {
+html, body, #map{
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
 }
 
 a{
@@ -223,8 +222,16 @@ figure img{
   	margin-bottom: 20px;
 }
 
-.middle>.row, .bottom, .content{
+.middle>.row, .bottom, .content, div.map{
 	padding: 80px 6%;
+}
+
+.middle>.contact{
+  padding-bottom: 0px;
+}
+
+div.map{
+  padding-top: 0px;
 }
 
 .orange{

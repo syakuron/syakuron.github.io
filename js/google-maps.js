@@ -1,28 +1,27 @@
-/*function initialize() {
-  var gsp = new google.maps.LatLng(51.508742, -0.120850);
-  
-  var pengaturan = {
-    zoom: 5,
-    center: gsp
-  }
-  var map = new google.maps.Map(document.getElementById('googleMap'), pengaturan);
+var mapOptions = {
+    center: new google.maps.LatLng(-7.771385,110.3775),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-  var img ="../images/map-marker.svg"
-  var tanda = new google.maps.Marker({
-    map: map,
-    position: gsp,
-    icon:img   
-  });
-  
-}
-google.maps.event.addDomListener(window, 'load', initialize;*/
+var markerOptions = {
+    position: new google.maps.LatLng(-7.771385,110.3775),
+    map: map
+};
+var marker = new google.maps.Marker(markerOptions);
+marker.setMap(map);
 
-  function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("maps"),mapProp);
-}
+var infoWindowOptions = {
+    content: 'Train With Us Here!'
+};
+
+var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+google.maps.event.addListener(marker,'click',function(e){
+  
+  infoWindow.open(map, marker);
+  
+}); 
+
 google.maps.event.addDomListener(window, 'load', initialize);
+
