@@ -1,3 +1,4 @@
+
 var mapOptions = {
     center: new google.maps.LatLng(-7.771385,110.3775),
     zoom: 15,
@@ -21,7 +22,5 @@ google.maps.event.addListener(marker,'click',function(e){
   
   infoWindow.open(map, marker);
   
-}); 
-
-google.maps.event.addDomListener(window, 'load', initialize);
+});
 
