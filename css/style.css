@@ -1093,4 +1093,33 @@ div.col-md-12.main.programs.top{
   margin-bottom: 50px;
 }
 
+.legal p{
+  line-height: 39px;
+}
 
+.legal div:first-child{
+  margin-bottom: 80px;
+}
+
+.faq div:first-child{
+  margin-bottom: 40px;
+}
+
+.responsibility h3{
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.responsibility li{
+  margin-bottom: 20px;
+}
+
+.responsibility li:last-child{
+  margin-bottom: 35px;
+}
+
+.responsibility a{
+  background-color: #fff;
+  color: #20262e;
+  text-decoration: underline;
+}
