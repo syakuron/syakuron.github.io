@@ -1118,7 +1118,8 @@ div.col-md-12.main.programs.top{
   margin-bottom: 35px;
 }
 
-.responsibility a{
+.content.responsibility .main a, 
+.content.responsibility .main a:hover{
   background-color: #fff;
   color: #20262e;
   text-decoration: underline;
