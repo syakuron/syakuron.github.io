@@ -318,7 +318,7 @@ div.map{
     color: #fff;
 }
 
-.orange h1, .blue h1{
+.orange h1, .blue h1, .blue h2, .orange h2{
   font-family: 'Dosis', sans-serif;
     text-align: center;
     font-size: 52px;
@@ -411,7 +411,7 @@ div.map{
   margin-bottom: 50px;
 }
 
-.fancy-testimony h1{
+.fancy-testimony h1, .fancy-testimony h2{
   text-align: center;
   font-family: 'Dosis', sans-serif;
   padding-top: 70px;
@@ -443,7 +443,7 @@ div.map{
   padding: 0px 80px;
 }
 
-.blue .bottom-sect h1{
+.blue .bottom-sect h1, .blue .bottom-sect h2{
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
   font-size: 38px;
