@@ -858,7 +858,7 @@ legend.tag-border {
   border: 0px;
 }
 
-div.trainers h1, .programs h1{
+div.trainers h1{
   text-align: center;
   font-family: 'Dosis', sans-serif;
   font-weight: 100;
@@ -935,32 +935,15 @@ div.trainers p{
   color: #7b7e83;
 }
 
-.programs-link{
-  display: inline-block;
-  max-width: 300px;
-  margin-bottom: 24px;
-  text-align: center;
-}
-
-.programs .featured-image .transparency{
-  background: rgba(40, 177, 222, 0.5);
-}
-
-.programs-content{
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  font-family: 'Dosis', sans-serif;
-}
 
 .price{
-  width: 32%;
+  width: 33%;
   background-color: #fff;
   border: 2px solid #d8d8d8;
   border-radius: 3px;
   margin: 0px;
+  text-align: center;
+  margin-right: -2px;
 }
 
 .price.popular::before{
@@ -973,10 +956,11 @@ div.trainers p{
   padding: 12px;
   background-color: #4dba97;
   color: #fff;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 26px;
   font-family:'Dosis', 'Open Sans', sans-serif;
   border-radius: 3px;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -994,6 +978,119 @@ div.trainers p{
 .price.popular:hover{
   z-index: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.price h3{
+  font-size: 21px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.price h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 70px;
+  font-family: 'Open Sans';
+  letter-spacing: 3px;
+}
+
+.price p:nth-child(3){
+  color: #888;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #d8d8d8;
+  text-indent: 7px;
+  line-height: 28px;
+}
+
+.price ul li{
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.price ul li:last-child{
+  margin-bottom: 20px;
+}
+
+.content .main .price a{
+  background-color: #20262e;
+  border-color: #20262e;
+  margin-bottom: 40px;
+}
+
+.content .main .price a:hover{
+  background-color: #000;
+  border-color: #000;
+}
+
+.content .main .price.popular a{
+  background-color: #F2701A;
+  border-color: #F2701A;
+}
+
+.content .main .price.popular a:hover{
+  background-color: #DE6515;
+  border-color: #DE6515;
+}
+
+.price ul{
+  padding: 0px;
+}
+
+.price.popular h3{
+  padding-top: 30px;
+  font-weight: 700;
+}
+
+
+div.col-md-4.price{
+  padding: 0px;
+}
+
+div.col-md-12.main.programs.top{
+  margin-bottom: 40px;
+}
+
+.programs.top>p{
+  margin-bottom: 100px;
+}
+
+.programs.blue h2{
+  font-weight: 100;
+  font-size: 52px;
+  margin-top: 40px;
+} 
+
+.programs.blue p{
+  line-height: 36px;
+}
+
+.programs.blue p:last-child{
+  margin-bottom: 110px;
+}
+
+.programs.bottom h2{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 56px;
+  line-height: 95px;
+}
+
+.programs.bottom{
+  padding: 0px;
+}
+
+.programs.bottom p{
+  font-size: 16px;
+  line-height: 31px;
+}
+
+.programs.bottom div:last-child{
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 
